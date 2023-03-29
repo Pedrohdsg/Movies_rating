@@ -1,0 +1,33 @@
+.container-sm {
+  display: flexbox;
+}
+
+body {
+    color: aliceblue;
+    background-image: url(
+        https://img.freepik.com/vetores-gratis/claquete-aberto-com-design-de-fundo-de-tira-de-filme_1017-26102.jpg?w=1380&t=st=1680120764~exp=1680121364~hmac=829168fa6f09464730663cd065a46f442fd8aff15af3911e055028a1e102130b 
+    );
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top;
+    position: relative;
+    
+}
+
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+  }
+  
+  option {
+    padding: 0;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }
+  
