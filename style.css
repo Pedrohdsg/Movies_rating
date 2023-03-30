@@ -1,9 +1,27 @@
+.listaFilmes {
+  margin: 20px;
+  margin-left: 10%;
+  position: absolute;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(64, 120, 134);
+  opacity: .8;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
 .container-sm {
   display: flexbox;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 16px;
 }
 
 body {
-    color: aliceblue;
+    color: gold;
     background-image: url(
         https://img.freepik.com/vetores-gratis/claquete-aberto-com-design-de-fundo-de-tira-de-filme_1017-26102.jpg?w=1380&t=st=1680120764~exp=1680121364~hmac=829168fa6f09464730663cd065a46f442fd8aff15af3911e055028a1e102130b 
     );
@@ -15,12 +33,14 @@ body {
 }
 
 datalist {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     writing-mode: vertical-lr;
     width: 200px;
-  }
+    color: gold;
+      }
   
   option {
     padding: 0;

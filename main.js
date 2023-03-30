@@ -1,4 +1,3 @@
-
 const options = {
   method: "GET",
   headers: {
@@ -13,10 +12,24 @@ fetch("https://moviesdatabase.p.rapidapi.com/titles", options)
   //.then(response => console.log(response.results[0].titleText.text))
   .catch((err) => console.error(err));
 
-const pesquisarFilme = document.getElementById("movie");
+const pesquisarFilme = document.getElementById("movieId");
 
-console.log(pesquisarFilme);
 
-const pontuacaoFilme = document.getElementById('customRange2');
+function avaliacao(pontuacaoFilme) {
+  pontuacaoFilme = Number(document.getElementById("customRange2").value);
+  return pontuacaoFilme
+}
 
-console.log(pontuacaoFilme);
+filme = document.querySelector(".movie");
+
+const inserir = document.getElementById("inserir");
+
+inserir.addEventListener("click", inserirFilme);
+
+function inserirFilme() {
+  
+  console.log(pesquisarFilme.value);
+  document.getElementById('filmes').innerHTML = `
+  <div>${pesquisarFilme.value} - ${avaliacao()} estrelas </div>
+  `
+}
