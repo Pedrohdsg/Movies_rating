@@ -38,7 +38,7 @@ function inserirFilme() {
   const li = document.createElement("li");
   document.getElementById("lista-filmes").appendChild(li).innerHTML = `${pesquisarFilme.value} - ${avaliacao()} estrela(s)`;
   
-  movieStorage = localStorage.setItem(listaFilmes, value)
+ 
 
   
 
