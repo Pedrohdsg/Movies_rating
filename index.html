@@ -17,18 +17,27 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0"
     />
   </head>
-  <body>
+  <body id="body">
+   
+    <h1 class="container-sm" id="titulo">Filmes e avaliações</h1>
     <div class="container-sm">
-      <input value=""
+      <label id="label" for="customRange2" class="form-label"
+        >Nome do filme:</label
+      >
+      <br>
+      <input
+        value=""
         type="text"
         class="movie"
         id="movieId"
         placeholder="Insira o nome do filme"
-      required/>
-     
+        required
+      />
     </div>
     <div class="container-sm">
-      <label for="customRange2" class="form-label">Avaliação do filme</label>
+      <label id="label" for="customRange2" class="form-label"
+        >Avaliação do filme:</label
+      >
       <p></p>
       <input
         type="range"
@@ -47,12 +56,16 @@
         <span class="material-symbols-outlined"> star </span>
         <span class="material-symbols-outlined"> star </span>
       </datalist>
-      <input type="button" value="Inserir" class="btn btn-outline-info" id="inserir" />
+      <input
+        type="button"
+        value="Inserir"
+        class="btn btn-outline-info"
+        id="inserir"
+      />
     </div>
-    <ul id="lista-filmes" class="listaFilmes">
-
-    </ul>
+    <ul id="lista-filmes" class="listaFilmes"></ul>
 
     <script src="main.js"></script>
   </body>
+  <footer>Pedro Henrique de Souza Gondim - 2023</footer>
 </html>
